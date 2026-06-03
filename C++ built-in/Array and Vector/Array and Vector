@@ -11,5 +11,16 @@
 Syntax :
 (start_iterator, end_iterator, initial_value);
 long long sum = accumulate(v.begin(), v.end(), 0LL);
+
 🔹 কোনো একটা index remove করা
-v.(v.begin() + idx)
+v.erase(v.begin() + idx)
+
+🔹 erase করার পর কাজ শেষে আবার ফেরত আনতে চাইলে
+irase করার আগে value এবং index save করে রাখতে হবে।
+
+vector<int> v = {10, 20, 30, 40, 50};
+int idx = 2;
+int val = v[idx];  // save value
+v.erase(v.begin() + idx);
+// ... কিছু কাজ ...
+v.insert(v.begin() + idx, val); // restore
