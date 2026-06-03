@@ -1,0 +1,12 @@
+🔹 পুরো array/vector-এর sum
+
+    int arr[] = {1, 2, 3, 4, 5};
+    int sum = accumulate(arr, arr + 5, 0);
+    cout << sum << endl; // 15
+
+    vector<int> v = {1, 2, 3, 4, 5};
+    int sum = accumulate(v.begin(), v.end(), 0);
+    cout << sum << endl; // 15
+
+Syntax :
+(start_iterator, end_iterator, initial_value);
