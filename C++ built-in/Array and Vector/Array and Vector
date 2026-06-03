@@ -11,3 +11,5 @@
 Syntax :
 (start_iterator, end_iterator, initial_value);
 long long sum = accumulate(v.begin(), v.end(), 0LL);
+🔹 কোনো একটা index remove করা
+v.(v.begin() + idx)
