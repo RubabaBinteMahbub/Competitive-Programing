@@ -6,3 +6,5 @@ q queries of the form: what is the minimum value in range
 Static Range Minimum Query → range-এর minimum বের করতে হবে।*/
 
 /*problem-এর structure একই, কিন্তু concept আলাদা।*/
+
+/*sparse table দিয়ে করা লাগে।*/
